@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D&D Character Sheet</title>
 </head>
+<body>
 <!--header for all character information START-->
     <header>
         <div class="container">
@@ -89,7 +90,162 @@
         </div>
     </header>
     <!--header for all character information END-->
-<body>
+<!--container for 6 abilities scores and skills START-->
+<div class="container">
+    <!--ability score cards START-->
+    <div>
+        <h3>Strength</h3>
+        <div class="ability-mod"></div>
+        <input type="number"/>
+        <ul>
+            <li>
+                Saving Throw
+            </li>
+            <li>
+                Athletics
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h3>Dexterity</h3>
+        <div class="ability-mod"></div>
+        <input type="number"/>
+        <ul>
+            <li>
+                Saving Throw
+            </li>
+            <li>
+                Acrobatics
+            </li>
+            <li>
+                Sleight of Hand
+            </li>
+            <li>
+                Stealth
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h3>Constitution</h3>
+        <div class="ability-mod"></div>
+        <input type="number"/>
+        <ul>
+            <li>
+                Saving Throw
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h3>Intelligence</h3>
+        <div class="ability-mod"></div>
+        <input type="number"/>
+        <ul>
+            <li>
+                Saving Throw
+            </li>
+            <li>
+                Arcana
+            </li>
+            <li>
+                History
+            </li>
+            <li>
+                Investigation
+            </li>
+            <li>
+                Nature
+            </li>
+            <li>
+                Religion
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h3>Wisdom</h3>
+        <div class="ability-mod"></div>
+        <input type="number"/>
+        <ul>
+            <li>
+                Saving Throw
+            </li>
+            <li>
+                Animal Handling
+            </li>
+            <li>
+                Insight
+            </li>
+            <li>
+                Medicine
+            </li>
+            <li>
+                Perception
+            </li>
+            <li>
+                Survival
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h3>Charisma</h3>
+        <div class="ability-mod"></div>
+        <input type="number"/>
+        <ul>
+            <li>
+                Saving Throw
+            </li>
+            <li>
+                Deception
+            </li>
+            <li>
+                Intimidation
+            </li>
+            <li>
+                Performance
+            </li>
+            <li>
+                Persuasion
+            </li>
+        </ul>
+    </div>
+    <!--ability score cards END-->
+</div>
+<!--container for 6 abilities scores and skills END-->
+
+
+<!--container for equip, hp, hit dice containers START-->
+<div class="container">
+<!--container for equip and gold START-->
+    <div>
+        <p id="eqiupment-list"></p>
+        <form>
+            <label for="copper">Copper:</label>
+            <input name="copper" type="number"/>
+            <label for="silver">Silver:</label>
+            <input name="silver" type="number"/>
+            <label for="electrum">Electrum:</label>
+            <input name="electrum" type="number"/>
+            <label for="gold">Gold:</label>
+            <input name="gold" type="number"/>
+            <label for="platinum">Platinum:</label>
+            <input name="platinum" type="number"/>
+        </form>
+    </div>
+<!--container for equip and gold END-->
+
+<!--container for HP and TEMP HP START-->
+    <form>
+        <label for="hp">Current HP:</label>
+        <input name="hp" type="number"/>
+        <label for="temp-hp">Temp HP:</label>
+        <input name="temp-hp" type="number"/>
+    </form>
+<!--container for HP and TEMP HP END-->
+
+<!--container for hit dice and death saves START-->
     
+<!--container for hit dice and death saves END-->
+</div>
+<!--container for equip, hp, hit dice containers END-->
 </body>
+
 </html>
