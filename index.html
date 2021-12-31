@@ -6,6 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D&D Character Sheet</title>
 </head>
+<!--header for all character information START-->
+    <header>
+        <div class="container">
+            <!--Player character info START-->
+            <form id="player-character-info">
+                <label for="character-name">Character Name:</label>
+                <input name="character-name" type="text" placeholder="Type Character Name Here"/>
+                <label for="race">Race: </label>
+                <select name="race">
+                    <option value="dwarf">Dwarf</option>
+                    <option value="elf">Elf</option>
+                    <option value="halfling">Halfling</option>
+                    <option value="human">Human</option>
+                    <option value="dragonborn">Dragonborn</option>
+                    <option value="gnome">Gnome</option>
+                    <option value="half-elf">Half-Elf</option>
+                    <option value="half-orc">Half-Orc</option>
+                    <option value="tiefling">Tiefling</option>
+                </select>
+                <label for="background">Background: </label>
+                <input name="background" type="text" placeholder="Type Background Here"/>
+                <label for="alignment">Alignment:</label>
+                <select name="alignment">
+                    <option value="LG">Lawful Good</option>
+                    <option value="NG">Neutral Good</option>
+                    <option value="CG">Chaotic Good</option>
+                    <option value="LN">Lawful Neutral</option>
+                    <option value="TN">True Neutral</option>
+                    <option value="CN">Chaotic Neutral</option>
+                    <option value="LE">Lawful Evil</option>
+                    <option value="NE">Neutral Evil</option>
+                    <option value="CE">Chaotic Evil</option>
+                </select>
+                <label for="player-name">Player Name:</label>
+                <input name="race" type="text" placeholder="Type Player Name Here"/>
+                <label for="exp">Experience Points:</label>
+                <input name="exp" type="number" placeholder= 0 />
+            </form>
+            <!--Player Character Info END-->
+            <div id="prof-insp">
+                <!--container for proficiency and insp bonuses START-->
+                <form id="proficiency">
+                    <label for="proficiency-bonus">Proficiency Bonus:</label>
+                    <input name="proficiency-bonus" type="number" disabled="true"/>
+                    <label for="inspiration">Inspiration</label>
+                    <input name="inspiration" type="checkbox">
+                </form>
+            </div>
+            <!--container for prof and insp bonuses end-->
+            <!--container for class, lvl, ac, init, and spd START-->
+            <div>           
+                <div id="class-lvl-info">
+                    <label for="class">Class:</label>
+                    <select name="class">
+                        <option value="barbarian">Barbarian</option>
+                        <option value="bard">Bard</option>
+                        <option value="cleric">Cleric</option>
+                        <option value="druid">Druid</option>
+                        <option value="fighter">Fighter</option>
+                        <option value="monk">Monk</option>
+                        <option value="paladin">Paladin</option>
+                        <option value="ranger">Ranger</option>
+                        <option value="rogue">Rogue</option>
+                        <option value="sorcerer">Sorcerer</option>
+                        <option value="warlock">Warlock</option>
+                        <option value="wizard">Wizard</option>
+                    </select>
+                    <label for="level">Level:</label>
+                    <input for="level" type="number"/>
+                </div>
+                <div>
+                    <label for="ac">AC</label>
+                    <input name="ac" type="number" disabled="true"/>
+                    <label for="initiative">Initiative</label>
+                    <input name="initiative" type="number" disabled="true"/>
+                    <label for="speed">Speed</label>
+                    <input name="speed" type="number" disabled="true"/>
+                </div>
+            </div>
+            <!--container for class, lvl, ac, init, and sp END--> 
+        </div>
+    </header>
+    <!--header for all character information END-->
 <body>
     
 </body>
