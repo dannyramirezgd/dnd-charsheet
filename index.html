@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D&D Character Sheet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
 <!--header for all character information START-->
     <header>
-        <div class="container">
+        <div class="container navbar">
             <!--Player character info START-->
-            <form id="player-character-info">
+            <form id="player-character-info" class="col-2">
                 <label for="character-name">Character Name:</label>
                 <input name="character-name" type="text" placeholder="Type Character Name Here"/>
                 <label for="race">Race: </label>
@@ -46,7 +47,7 @@
                 <input name="exp" type="number" placeholder= 0 />
             </form>
             <!--Player Character Info END-->
-            <div id="prof-insp">
+            <div id="prof-insp" class="col-1">
                 <!--container for proficiency and insp bonuses START-->
                 <form id="proficiency">
                     <label for="proficiency-bonus">Proficiency Bonus:</label>
@@ -58,7 +59,7 @@
             <!--container for prof and insp bonuses end-->
             <!--container for class, lvl, ac, init, and spd START-->
             <div>           
-                <div id="class-lvl-info">
+                <div id="class-lvl-info" class="col-2">
                     <label for="class">Class:</label>
                     <select name="class">
                         <option value="barbarian">Barbarian</option>
@@ -92,123 +93,19 @@
     <!--header for all character information END-->
 <!--container for 6 abilities scores and skills START-->
 <div class="container d-flex">
-        <!--ability score cards START-->
+    <!--ability score cards START-->
     <div class="row">
-        <div>
-            <h3>Strength</h3>
-            <div class="ability-mod"></div>
-            <input type="number"/>
-            <ul>
-                <li>
-                    Saving Throw
-                </li>
-                <li>
-                    Athletics
-                </li>
-            </ul>
-        </div>
-        <div>
-            <h3>Dexterity</h3>
-            <div class="ability-mod"></div>
-            <input type="number"/>
-            <ul>
-                <li>
-                    Saving Throw
-                </li>
-                <li>
-                    Acrobatics
-                </li>
-                <li>
-                    Sleight of Hand
-                </li>
-                <li>
-                    Stealth
-                </li>
-            </ul>
-        </div>
-        <div>
-            <h3>Constitution</h3>
-            <div class="ability-mod"></div>
-            <input type="number"/>
-            <ul>
-                <li>
-                    Saving Throw
-                </li>
-            </ul>
-        </div>
-        <div>
-            <h3>Intelligence</h3>
-            <div class="ability-mod"></div>
-            <input type="number"/>
-            <ul>
-                <li>
-                    Saving Throw
-                </li>
-                <li>
-                    Arcana
-                </li>
-                <li>
-                    History
-                </li>
-                <li>
-                    Investigation
-                </li>
-                <li>
-                    Nature
-                </li>
-                <li>
-                    Religion
-                </li>
-            </ul>
-        </div>
-        <div>
-            <h3>Wisdom</h3>
-            <div class="ability-mod"></div>
-            <input type="number"/>
-            <ul>
-                <li>
-                    Saving Throw
-                </li>
-                <li>
-                    Animal Handling
-                </li>
-                <li>
-                    Insight
-                </li>
-                <li>
-                    Medicine
-                </li>
-                <li>
-                    Perception
-                </li>
-                <li>
-                    Survival
-                </li>
-            </ul>
-        </div>
-        <div>
-            <h3>Charisma</h3>
-            <div class="ability-mod"></div>
-            <input type="number"/>
-            <ul>
-                <li>
-                    Saving Throw
-                </li>
-                <li>
-                    Deception
-                </li>
-                <li>
-                    Intimidation
-                </li>
-                <li>
-                    Performance
-                </li>
-                <li>
-                    Persuasion
-                </li>
-            </ul>
-        </div>
-        <!--ability score cards END-->
+        <h3>Strength</h3>
+        <div class="ability-mod"></div>
+        <input type="number"/>
+        <ul>
+            <li>
+                Saving Throw
+            </li>
+            <li>
+                Athletics
+            </li>
+        </ul>
     </div>
 </div>
 <!--container for 6 abilities scores and skills END-->
@@ -249,5 +146,6 @@
 </div>
 <!--container for equip, hp, hit dice containers END-->
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="assets/js/homepage.js"></script>
 </html>
